@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://query.ws.draws.opap.gr/" elementFormDefault="unqualified" targetNamespace="http://query.ws.draws.opap.gr/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="fetchBowlingDrawByNumber" type="tns:fetchBowlingDrawByNumber" />
+  <xs:element name="fetchBowlingDrawByNumberResponse" type="tns:fetchBowlingDrawByNumberResponse" />
+  <xs:element name="fetchBowlingDrawsByDate" type="tns:fetchBowlingDrawsByDate" />
+  <xs:element name="fetchBowlingDrawsByDateResponse" type="tns:fetchBowlingDrawsByDateResponse" />
+  <xs:element name="fetchBowlingLatestDraw" type="tns:fetchBowlingLatestDraw" />
+  <xs:element name="fetchBowlingLatestDrawResponse" type="tns:fetchBowlingLatestDrawResponse" />
+  <xs:element name="fetchExtra5DrawByNumber" type="tns:fetchExtra5DrawByNumber" />
+  <xs:element name="fetchExtra5DrawByNumberResponse" type="tns:fetchExtra5DrawByNumberResponse" />
+  <xs:element name="fetchExtra5DrawsByDate" type="tns:fetchExtra5DrawsByDate" />
+  <xs:element name="fetchExtra5DrawsByDateResponse" type="tns:fetchExtra5DrawsByDateResponse" />
+  <xs:element name="fetchExtra5LatestDraw" type="tns:fetchExtra5LatestDraw" />
+  <xs:element name="fetchExtra5LatestDrawResponse" type="tns:fetchExtra5LatestDrawResponse" />
+  <xs:element name="fetchJokerDrawByNumber" type="tns:fetchJokerDrawByNumber" />
+  <xs:element name="fetchJokerDrawByNumberResponse" type="tns:fetchJokerDrawByNumberResponse" />
+  <xs:element name="fetchJokerDrawsByDate" type="tns:fetchJokerDrawsByDate" />
+  <xs:element name="fetchJokerDrawsByDateResponse" type="tns:fetchJokerDrawsByDateResponse" />
+  <xs:element name="fetchJokerLatestDraw" type="tns:fetchJokerLatestDraw" />
+  <xs:element name="fetchJokerLatestDrawResponse" type="tns:fetchJokerLatestDrawResponse" />
+  <xs:element name="fetchKinoDrawByNumber" type="tns:fetchKinoDrawByNumber" />
+  <xs:element name="fetchKinoDrawByNumberResponse" type="tns:fetchKinoDrawByNumberResponse" />
+  <xs:element name="fetchKinoDrawsByDate" type="tns:fetchKinoDrawsByDate" />
+  <xs:element name="fetchKinoDrawsByDateResponse" type="tns:fetchKinoDrawsByDateResponse" />
+  <xs:element name="fetchKinoLatestDraw" type="tns:fetchKinoLatestDraw" />
+  <xs:element name="fetchKinoLatestDrawResponse" type="tns:fetchKinoLatestDrawResponse" />
+  <xs:element name="fetchLatestPropoSaturdayDraw" type="tns:fetchLatestPropoSaturdayDraw" />
+  <xs:element name="fetchLatestPropoSaturdayDrawResponse" type="tns:fetchLatestPropoSaturdayDrawResponse" />
+  <xs:element name="fetchLatestPropoSundayDraw" type="tns:fetchLatestPropoSundayDraw" />
+  <xs:element name="fetchLatestPropoSundayDrawResponse" type="tns:fetchLatestPropoSundayDrawResponse" />
+  <xs:element name="fetchLatestPropoWednesdayDraw" type="tns:fetchLatestPropoWednesdayDraw" />
+  <xs:element name="fetchLatestPropoWednesdayDrawResponse" type="tns:fetchLatestPropoWednesdayDrawResponse" />
+  <xs:element name="fetchLottoDrawByNumber" type="tns:fetchLottoDrawByNumber" />
+  <xs:element name="fetchLottoDrawByNumberResponse" type="tns:fetchLottoDrawByNumberResponse" />
+  <xs:element name="fetchLottoDrawsByDate" type="tns:fetchLottoDrawsByDate" />
+  <xs:element name="fetchLottoDrawsByDateResponse" type="tns:fetchLottoDrawsByDateResponse" />
+  <xs:element name="fetchLottoLatestDraw" type="tns:fetchLottoLatestDraw" />
+  <xs:element name="fetchLottoLatestDrawResponse" type="tns:fetchLottoLatestDrawResponse" />
+  <xs:element name="fetchPenaltiesDrawByNumber" type="tns:fetchPenaltiesDrawByNumber" />
+  <xs:element name="fetchPenaltiesDrawByNumberResponse" type="tns:fetchPenaltiesDrawByNumberResponse" />
+  <xs:element name="fetchPenaltiesDrawsByDate" type="tns:fetchPenaltiesDrawsByDate" />
+  <xs:element name="fetchPenaltiesDrawsByDateResponse" type="tns:fetchPenaltiesDrawsByDateResponse" />
+  <xs:element name="fetchPenaltiesLatestDraw" type="tns:fetchPenaltiesLatestDraw" />
+  <xs:element name="fetchPenaltiesLatestDrawResponse" type="tns:fetchPenaltiesLatestDrawResponse" />
+  <xs:element name="fetchPowerSpinDrawByNumber" type="tns:fetchPowerSpinDrawByNumber" />
+  <xs:element name="fetchPowerSpinDrawByNumberResponse" type="tns:fetchPowerSpinDrawByNumberResponse" />
+  <xs:element name="fetchPowerSpinDrawsByDate" type="tns:fetchPowerSpinDrawsByDate" />
+  <xs:element name="fetchPowerSpinDrawsByDateResponse" type="tns:fetchPowerSpinDrawsByDateResponse" />
+  <xs:element name="fetchPowerSpinLatestDraw" type="tns:fetchPowerSpinLatestDraw" />
+  <xs:element name="fetchPowerSpinLatestDrawResponse" type="tns:fetchPowerSpinLatestDrawResponse" />
+  <xs:element name="fetchPropoDrawByNumberAndDay" type="tns:fetchPropoDrawByNumberAndDay" />
+  <xs:element name="fetchPropoDrawByNumberAndDayResponse" type="tns:fetchPropoDrawByNumberAndDayResponse" />
+  <xs:element name="fetchPropoDrawsByDate" type="tns:fetchPropoDrawsByDate" />
+  <xs:element name="fetchPropoDrawsByDateResponse" type="tns:fetchPropoDrawsByDateResponse" />
+  <xs:element name="fetchPropoGoalDrawByNumber" type="tns:fetchPropoGoalDrawByNumber" />
+  <xs:element name="fetchPropoGoalDrawByNumberResponse" type="tns:fetchPropoGoalDrawByNumberResponse" />
+  <xs:element name="fetchPropoGoalDrawsByDate" type="tns:fetchPropoGoalDrawsByDate" />
+  <xs:element name="fetchPropoGoalDrawsByDateResponse" type="tns:fetchPropoGoalDrawsByDateResponse" />
+  <xs:element name="fetchPropoGoalLatestDraw" type="tns:fetchPropoGoalLatestDraw" />
+  <xs:element name="fetchPropoGoalLatestDrawResponse" type="tns:fetchPropoGoalLatestDrawResponse" />
+  <xs:element name="fetchProtoDrawByNumber" type="tns:fetchProtoDrawByNumber" />
+  <xs:element name="fetchProtoDrawByNumberResponse" type="tns:fetchProtoDrawByNumberResponse" />
+  <xs:element name="fetchProtoDrawsByDate" type="tns:fetchProtoDrawsByDate" />
+  <xs:element name="fetchProtoDrawsByDateResponse" type="tns:fetchProtoDrawsByDateResponse" />
+  <xs:element name="fetchProtoLatestDraw" type="tns:fetchProtoLatestDraw" />
+  <xs:element name="fetchProtoLatestDrawResponse" type="tns:fetchProtoLatestDrawResponse" />
+  <xs:element name="fetchSuper3DrawByNumber" type="tns:fetchSuper3DrawByNumber" />
+  <xs:element name="fetchSuper3DrawByNumberResponse" type="tns:fetchSuper3DrawByNumberResponse" />
+  <xs:element name="fetchSuper3DrawsByDate" type="tns:fetchSuper3DrawsByDate" />
+  <xs:element name="fetchSuper3DrawsByDateResponse" type="tns:fetchSuper3DrawsByDateResponse" />
+  <xs:element name="fetchSuper3LatestDraw" type="tns:fetchSuper3LatestDraw" />
+  <xs:element name="fetchSuper3LatestDrawResponse" type="tns:fetchSuper3LatestDrawResponse" />
+  <xs:complexType name="fetchPropoDrawsByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPropoDrawsByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:propoDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="propoDraw">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawId" type="xs:long" />
+      <xs:element minOccurs="0" name="drawTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="gameId" type="xs:long" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="resultArr" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchLottoDrawByNumber">
+    <xs:sequence>
+      <xs:element name="drawNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchLottoDrawByNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gameDraw">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawId" type="xs:long" />
+      <xs:element minOccurs="0" name="drawTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="gameId" type="xs:long" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="numArr" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchProtoDrawByNumber">
+    <xs:sequence>
+      <xs:element name="drawNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchProtoDrawByNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPropoGoalDrawsByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPropoGoalDrawsByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchBowlingDrawsByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchBowlingDrawsByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPropoDrawByNumberAndDay">
+    <xs:sequence>
+      <xs:element name="drawNo" type="xs:long" />
+      <xs:element name="dayNum" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPropoDrawByNumberAndDayResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:propoDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchBowlingDrawByNumber">
+    <xs:sequence>
+      <xs:element name="drawNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchBowlingDrawByNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchJokerDrawByNumber">
+    <xs:sequence>
+      <xs:element name="drawNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchJokerDrawByNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchProtoLatestDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchProtoLatestDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPowerSpinDrawByNumber">
+    <xs:sequence>
+      <xs:element name="drawNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPowerSpinDrawByNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchKinoDrawsByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchKinoDrawsByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchLottoLatestDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchLottoLatestDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchLatestPropoSundayDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchLatestPropoSundayDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:propoDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchJokerDrawsByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchJokerDrawsByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchKinoLatestDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchKinoLatestDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchSuper3DrawsByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchSuper3DrawsByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPenaltiesDrawByNumber">
+    <xs:sequence>
+      <xs:element name="drawNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPenaltiesDrawByNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchProtoDrawsByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchProtoDrawsByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPenaltiesLatestDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchPenaltiesLatestDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchExtra5DrawByNumber">
+    <xs:sequence>
+      <xs:element name="drawNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchExtra5DrawByNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPenaltiesDrawsByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPenaltiesDrawsByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchLatestPropoSaturdayDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchLatestPropoSaturdayDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:propoDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchJokerLatestDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchJokerLatestDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchSuper3DrawByNumber">
+    <xs:sequence>
+      <xs:element name="drawNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchSuper3DrawByNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchExtra5DrawsByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchExtra5DrawsByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPowerSpinDrawsByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPowerSpinDrawsByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPropoGoalLatestDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchPropoGoalLatestDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchBowlingLatestDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchBowlingLatestDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPowerSpinLatestDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchPowerSpinLatestDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchKinoDrawByNumber">
+    <xs:sequence>
+      <xs:element name="drawNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchKinoDrawByNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchSuper3LatestDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchSuper3LatestDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPropoGoalDrawByNumber">
+    <xs:sequence>
+      <xs:element name="drawNo" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchPropoGoalDrawByNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchLatestPropoWednesdayDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchLatestPropoWednesdayDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:propoDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchLottoDrawsByDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="drawDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchLottoDrawsByDateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fetchExtra5LatestDraw">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="fetchExtra5LatestDrawResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:gameDraw" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

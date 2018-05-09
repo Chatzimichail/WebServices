@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://query.ws.draws.opap.gr/" name="DrawQueriesServiceImplService" targetNamespace="http://query.ws.draws.opap.gr/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema">
+      <xsd:import schemaLocation="http://applications.opap.gr/DrawsQueryServices/services/DrawQueriesServiceImplPort?xsd=drawqueriesserviceimpl_schema1.xsd" namespace="http://query.ws.draws.opap.gr/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="fetchSuper3DrawsByDate">
+    <wsdl:part name="parameters" element="tns:fetchSuper3DrawsByDate" />
+  </wsdl:message>
+  <wsdl:message name="fetchProtoDrawsByDate">
+    <wsdl:part name="parameters" element="tns:fetchProtoDrawsByDate" />
+  </wsdl:message>
+  <wsdl:message name="fetchKinoLatestDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchKinoLatestDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchExtra5DrawByNumberResponse">
+    <wsdl:part name="parameters" element="tns:fetchExtra5DrawByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchJokerLatestDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchJokerLatestDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchKinoDrawByNumberResponse">
+    <wsdl:part name="parameters" element="tns:fetchKinoDrawByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchJokerDrawsByDateResponse">
+    <wsdl:part name="parameters" element="tns:fetchJokerDrawsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchKinoDrawsByDateResponse">
+    <wsdl:part name="parameters" element="tns:fetchKinoDrawsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchSuper3LatestDraw">
+    <wsdl:part name="parameters" element="tns:fetchSuper3LatestDraw" />
+  </wsdl:message>
+  <wsdl:message name="fetchPowerSpinLatestDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchPowerSpinLatestDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchBowlingDrawByNumberResponse">
+    <wsdl:part name="parameters" element="tns:fetchBowlingDrawByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchLottoLatestDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchLottoLatestDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchPropoGoalDrawByNumber">
+    <wsdl:part name="parameters" element="tns:fetchPropoGoalDrawByNumber" />
+  </wsdl:message>
+  <wsdl:message name="fetchJokerDrawsByDate">
+    <wsdl:part name="parameters" element="tns:fetchJokerDrawsByDate" />
+  </wsdl:message>
+  <wsdl:message name="fetchPropoGoalLatestDraw">
+    <wsdl:part name="parameters" element="tns:fetchPropoGoalLatestDraw" />
+  </wsdl:message>
+  <wsdl:message name="fetchBowlingDrawByNumber">
+    <wsdl:part name="parameters" element="tns:fetchBowlingDrawByNumber" />
+  </wsdl:message>
+  <wsdl:message name="fetchPenaltiesLatestDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchPenaltiesLatestDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchPowerSpinDrawByNumber">
+    <wsdl:part name="parameters" element="tns:fetchPowerSpinDrawByNumber" />
+  </wsdl:message>
+  <wsdl:message name="fetchLatestPropoSaturdayDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchLatestPropoSaturdayDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchBowlingDrawsByDateResponse">
+    <wsdl:part name="parameters" element="tns:fetchBowlingDrawsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchKinoDrawByNumber">
+    <wsdl:part name="parameters" element="tns:fetchKinoDrawByNumber" />
+  </wsdl:message>
+  <wsdl:message name="fetchPowerSpinLatestDraw">
+    <wsdl:part name="parameters" element="tns:fetchPowerSpinLatestDraw" />
+  </wsdl:message>
+  <wsdl:message name="fetchPropoDrawsByDateResponse">
+    <wsdl:part name="parameters" element="tns:fetchPropoDrawsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchPropoDrawsByDate">
+    <wsdl:part name="parameters" element="tns:fetchPropoDrawsByDate" />
+  </wsdl:message>
+  <wsdl:message name="fetchLatestPropoWednesdayDraw">
+    <wsdl:part name="parameters" element="tns:fetchLatestPropoWednesdayDraw" />
+  </wsdl:message>
+  <wsdl:message name="fetchProtoLatestDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchProtoLatestDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchSuper3DrawByNumber">
+    <wsdl:part name="parameters" element="tns:fetchSuper3DrawByNumber" />
+  </wsdl:message>
+  <wsdl:message name="fetchBowlingDrawsByDate">
+    <wsdl:part name="parameters" element="tns:fetchBowlingDrawsByDate" />
+  </wsdl:message>
+  <wsdl:message name="fetchPropoGoalLatestDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchPropoGoalLatestDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchPowerSpinDrawsByDate">
+    <wsdl:part name="parameters" element="tns:fetchPowerSpinDrawsByDate" />
+  </wsdl:message>
+  <wsdl:message name="fetchLottoDrawByNumber">
+    <wsdl:part name="parameters" element="tns:fetchLottoDrawByNumber" />
+  </wsdl:message>
+  <wsdl:message name="fetchPenaltiesDrawByNumberResponse">
+    <wsdl:part name="parameters" element="tns:fetchPenaltiesDrawByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchJokerDrawByNumberResponse">
+    <wsdl:part name="parameters" element="tns:fetchJokerDrawByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchLottoDrawsByDate">
+    <wsdl:part name="parameters" element="tns:fetchLottoDrawsByDate" />
+  </wsdl:message>
+  <wsdl:message name="fetchSuper3LatestDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchSuper3LatestDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchProtoDrawByNumber">
+    <wsdl:part name="parameters" element="tns:fetchProtoDrawByNumber" />
+  </wsdl:message>
+  <wsdl:message name="fetchPropoDrawByNumberAndDay">
+    <wsdl:part name="parameters" element="tns:fetchPropoDrawByNumberAndDay" />
+  </wsdl:message>
+  <wsdl:message name="fetchLatestPropoWednesdayDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchLatestPropoWednesdayDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchPropoGoalDrawsByDate">
+    <wsdl:part name="parameters" element="tns:fetchPropoGoalDrawsByDate" />
+  </wsdl:message>
+  <wsdl:message name="fetchExtra5LatestDraw">
+    <wsdl:part name="parameters" element="tns:fetchExtra5LatestDraw" />
+  </wsdl:message>
+  <wsdl:message name="fetchPowerSpinDrawsByDateResponse">
+    <wsdl:part name="parameters" element="tns:fetchPowerSpinDrawsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchExtra5DrawByNumber">
+    <wsdl:part name="parameters" element="tns:fetchExtra5DrawByNumber" />
+  </wsdl:message>
+  <wsdl:message name="fetchProtoDrawByNumberResponse">
+    <wsdl:part name="parameters" element="tns:fetchProtoDrawByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchLatestPropoSundayDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchLatestPropoSundayDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchPropoDrawByNumberAndDayResponse">
+    <wsdl:part name="parameters" element="tns:fetchPropoDrawByNumberAndDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchProtoLatestDraw">
+    <wsdl:part name="parameters" element="tns:fetchProtoLatestDraw" />
+  </wsdl:message>
+  <wsdl:message name="fetchLottoDrawsByDateResponse">
+    <wsdl:part name="parameters" element="tns:fetchLottoDrawsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchLatestPropoSaturdayDraw">
+    <wsdl:part name="parameters" element="tns:fetchLatestPropoSaturdayDraw" />
+  </wsdl:message>
+  <wsdl:message name="fetchKinoDrawsByDate">
+    <wsdl:part name="parameters" element="tns:fetchKinoDrawsByDate" />
+  </wsdl:message>
+  <wsdl:message name="fetchJokerLatestDraw">
+    <wsdl:part name="parameters" element="tns:fetchJokerLatestDraw" />
+  </wsdl:message>
+  <wsdl:message name="fetchSuper3DrawsByDateResponse">
+    <wsdl:part name="parameters" element="tns:fetchSuper3DrawsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchBowlingLatestDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchBowlingLatestDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchJokerDrawByNumber">
+    <wsdl:part name="parameters" element="tns:fetchJokerDrawByNumber" />
+  </wsdl:message>
+  <wsdl:message name="fetchExtra5LatestDrawResponse">
+    <wsdl:part name="parameters" element="tns:fetchExtra5LatestDrawResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchPropoGoalDrawsByDateResponse">
+    <wsdl:part name="parameters" element="tns:fetchPropoGoalDrawsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchSuper3DrawByNumberResponse">
+    <wsdl:part name="parameters" element="tns:fetchSuper3DrawByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchExtra5DrawsByDate">
+    <wsdl:part name="parameters" element="tns:fetchExtra5DrawsByDate" />
+  </wsdl:message>
+  <wsdl:message name="fetchExtra5DrawsByDateResponse">
+    <wsdl:part name="parameters" element="tns:fetchExtra5DrawsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchLottoDrawByNumberResponse">
+    <wsdl:part name="parameters" element="tns:fetchLottoDrawByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchPenaltiesDrawsByDate">
+    <wsdl:part name="parameters" element="tns:fetchPenaltiesDrawsByDate" />
+  </wsdl:message>
+  <wsdl:message name="fetchLatestPropoSundayDraw">
+    <wsdl:part name="parameters" element="tns:fetchLatestPropoSundayDraw" />
+  </wsdl:message>
+  <wsdl:message name="fetchProtoDrawsByDateResponse">
+    <wsdl:part name="parameters" element="tns:fetchProtoDrawsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchPropoGoalDrawByNumberResponse">
+    <wsdl:part name="parameters" element="tns:fetchPropoGoalDrawByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchPenaltiesLatestDraw">
+    <wsdl:part name="parameters" element="tns:fetchPenaltiesLatestDraw" />
+  </wsdl:message>
+  <wsdl:message name="fetchPenaltiesDrawsByDateResponse">
+    <wsdl:part name="parameters" element="tns:fetchPenaltiesDrawsByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchPowerSpinDrawByNumberResponse">
+    <wsdl:part name="parameters" element="tns:fetchPowerSpinDrawByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="fetchPenaltiesDrawByNumber">
+    <wsdl:part name="parameters" element="tns:fetchPenaltiesDrawByNumber" />
+  </wsdl:message>
+  <wsdl:message name="fetchBowlingLatestDraw">
+    <wsdl:part name="parameters" element="tns:fetchBowlingLatestDraw" />
+  </wsdl:message>
+  <wsdl:message name="fetchLottoLatestDraw">
+    <wsdl:part name="parameters" element="tns:fetchLottoLatestDraw" />
+  </wsdl:message>
+  <wsdl:message name="fetchKinoLatestDraw">
+    <wsdl:part name="parameters" element="tns:fetchKinoLatestDraw" />
+  </wsdl:message>
+  <wsdl:portType name="DrawQueriesServiceSEI">
+    <wsdl:operation name="fetchPropoDrawsByDate">
+      <wsdl:input name="fetchPropoDrawsByDate" message="tns:fetchPropoDrawsByDate" />
+      <wsdl:output name="fetchPropoDrawsByDateResponse" message="tns:fetchPropoDrawsByDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchLottoDrawByNumber">
+      <wsdl:input name="fetchLottoDrawByNumber" message="tns:fetchLottoDrawByNumber" />
+      <wsdl:output name="fetchLottoDrawByNumberResponse" message="tns:fetchLottoDrawByNumberResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchProtoDrawByNumber">
+      <wsdl:input name="fetchProtoDrawByNumber" message="tns:fetchProtoDrawByNumber" />
+      <wsdl:output name="fetchProtoDrawByNumberResponse" message="tns:fetchProtoDrawByNumberResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchPropoGoalDrawsByDate">
+      <wsdl:input name="fetchPropoGoalDrawsByDate" message="tns:fetchPropoGoalDrawsByDate" />
+      <wsdl:output name="fetchPropoGoalDrawsByDateResponse" message="tns:fetchPropoGoalDrawsByDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchBowlingDrawsByDate">
+      <wsdl:input name="fetchBowlingDrawsByDate" message="tns:fetchBowlingDrawsByDate" />
+      <wsdl:output name="fetchBowlingDrawsByDateResponse" message="tns:fetchBowlingDrawsByDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchPropoDrawByNumberAndDay">
+      <wsdl:input name="fetchPropoDrawByNumberAndDay" message="tns:fetchPropoDrawByNumberAndDay" />
+      <wsdl:output name="fetchPropoDrawByNumberAndDayResponse" message="tns:fetchPropoDrawByNumberAndDayResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchBowlingDrawByNumber">
+      <wsdl:input name="fetchBowlingDrawByNumber" message="tns:fetchBowlingDrawByNumber" />
+      <wsdl:output name="fetchBowlingDrawByNumberResponse" message="tns:fetchBowlingDrawByNumberResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchJokerDrawByNumber">
+      <wsdl:input name="fetchJokerDrawByNumber" message="tns:fetchJokerDrawByNumber" />
+      <wsdl:output name="fetchJokerDrawByNumberResponse" message="tns:fetchJokerDrawByNumberResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchProtoLatestDraw">
+      <wsdl:input name="fetchProtoLatestDraw" message="tns:fetchProtoLatestDraw" />
+      <wsdl:output name="fetchProtoLatestDrawResponse" message="tns:fetchProtoLatestDrawResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchPowerSpinDrawByNumber">
+      <wsdl:input name="fetchPowerSpinDrawByNumber" message="tns:fetchPowerSpinDrawByNumber" />
+      <wsdl:output name="fetchPowerSpinDrawByNumberResponse" message="tns:fetchPowerSpinDrawByNumberResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchKinoDrawsByDate">
+      <wsdl:input name="fetchKinoDrawsByDate" message="tns:fetchKinoDrawsByDate" />
+      <wsdl:output name="fetchKinoDrawsByDateResponse" message="tns:fetchKinoDrawsByDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchLottoLatestDraw">
+      <wsdl:input name="fetchLottoLatestDraw" message="tns:fetchLottoLatestDraw" />
+      <wsdl:output name="fetchLottoLatestDrawResponse" message="tns:fetchLottoLatestDrawResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchLatestPropoSundayDraw">
+      <wsdl:input name="fetchLatestPropoSundayDraw" message="tns:fetchLatestPropoSundayDraw" />
+      <wsdl:output name="fetchLatestPropoSundayDrawResponse" message="tns:fetchLatestPropoSundayDrawResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchJokerDrawsByDate">
+      <wsdl:input name="fetchJokerDrawsByDate" message="tns:fetchJokerDrawsByDate" />
+      <wsdl:output name="fetchJokerDrawsByDateResponse" message="tns:fetchJokerDrawsByDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchKinoLatestDraw">
+      <wsdl:input name="fetchKinoLatestDraw" message="tns:fetchKinoLatestDraw" />
+      <wsdl:output name="fetchKinoLatestDrawResponse" message="tns:fetchKinoLatestDrawResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchSuper3DrawsByDate">
+      <wsdl:input name="fetchSuper3DrawsByDate" message="tns:fetchSuper3DrawsByDate" />
+      <wsdl:output name="fetchSuper3DrawsByDateResponse" message="tns:fetchSuper3DrawsByDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchPenaltiesDrawByNumber">
+      <wsdl:input name="fetchPenaltiesDrawByNumber" message="tns:fetchPenaltiesDrawByNumber" />
+      <wsdl:output name="fetchPenaltiesDrawByNumberResponse" message="tns:fetchPenaltiesDrawByNumberResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchProtoDrawsByDate">
+      <wsdl:input name="fetchProtoDrawsByDate" message="tns:fetchProtoDrawsByDate" />
+      <wsdl:output name="fetchProtoDrawsByDateResponse" message="tns:fetchProtoDrawsByDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchPenaltiesLatestDraw">
+      <wsdl:input name="fetchPenaltiesLatestDraw" message="tns:fetchPenaltiesLatestDraw" />
+      <wsdl:output name="fetchPenaltiesLatestDrawResponse" message="tns:fetchPenaltiesLatestDrawResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchExtra5DrawByNumber">
+      <wsdl:input name="fetchExtra5DrawByNumber" message="tns:fetchExtra5DrawByNumber" />
+      <wsdl:output name="fetchExtra5DrawByNumberResponse" message="tns:fetchExtra5DrawByNumberResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchPenaltiesDrawsByDate">
+      <wsdl:input name="fetchPenaltiesDrawsByDate" message="tns:fetchPenaltiesDrawsByDate" />
+      <wsdl:output name="fetchPenaltiesDrawsByDateResponse" message="tns:fetchPenaltiesDrawsByDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchLatestPropoSaturdayDraw">
+      <wsdl:input name="fetchLatestPropoSaturdayDraw" message="tns:fetchLatestPropoSaturdayDraw" />
+      <wsdl:output name="fetchLatestPropoSaturdayDrawResponse" message="tns:fetchLatestPropoSaturdayDrawResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchJokerLatestDraw">
+      <wsdl:input name="fetchJokerLatestDraw" message="tns:fetchJokerLatestDraw" />
+      <wsdl:output name="fetchJokerLatestDrawResponse" message="tns:fetchJokerLatestDrawResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchSuper3DrawByNumber">
+      <wsdl:input name="fetchSuper3DrawByNumber" message="tns:fetchSuper3DrawByNumber" />
+      <wsdl:output name="fetchSuper3DrawByNumberResponse" message="tns:fetchSuper3DrawByNumberResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchExtra5DrawsByDate">
+      <wsdl:input name="fetchExtra5DrawsByDate" message="tns:fetchExtra5DrawsByDate" />
+      <wsdl:output name="fetchExtra5DrawsByDateResponse" message="tns:fetchExtra5DrawsByDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchPowerSpinDrawsByDate">
+      <wsdl:input name="fetchPowerSpinDrawsByDate" message="tns:fetchPowerSpinDrawsByDate" />
+      <wsdl:output name="fetchPowerSpinDrawsByDateResponse" message="tns:fetchPowerSpinDrawsByDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchPropoGoalLatestDraw">
+      <wsdl:input name="fetchPropoGoalLatestDraw" message="tns:fetchPropoGoalLatestDraw" />
+      <wsdl:output name="fetchPropoGoalLatestDrawResponse" message="tns:fetchPropoGoalLatestDrawResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchBowlingLatestDraw">
+      <wsdl:input name="fetchBowlingLatestDraw" message="tns:fetchBowlingLatestDraw" />
+      <wsdl:output name="fetchBowlingLatestDrawResponse" message="tns:fetchBowlingLatestDrawResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchPowerSpinLatestDraw">
+      <wsdl:input name="fetchPowerSpinLatestDraw" message="tns:fetchPowerSpinLatestDraw" />
+      <wsdl:output name="fetchPowerSpinLatestDrawResponse" message="tns:fetchPowerSpinLatestDrawResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchKinoDrawByNumber">
+      <wsdl:input name="fetchKinoDrawByNumber" message="tns:fetchKinoDrawByNumber" />
+      <wsdl:output name="fetchKinoDrawByNumberResponse" message="tns:fetchKinoDrawByNumberResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchSuper3LatestDraw">
+      <wsdl:input name="fetchSuper3LatestDraw" message="tns:fetchSuper3LatestDraw" />
+      <wsdl:output name="fetchSuper3LatestDrawResponse" message="tns:fetchSuper3LatestDrawResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchPropoGoalDrawByNumber">
+      <wsdl:input name="fetchPropoGoalDrawByNumber" message="tns:fetchPropoGoalDrawByNumber" />
+      <wsdl:output name="fetchPropoGoalDrawByNumberResponse" message="tns:fetchPropoGoalDrawByNumberResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchLatestPropoWednesdayDraw">
+      <wsdl:input name="fetchLatestPropoWednesdayDraw" message="tns:fetchLatestPropoWednesdayDraw" />
+      <wsdl:output name="fetchLatestPropoWednesdayDrawResponse" message="tns:fetchLatestPropoWednesdayDrawResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchLottoDrawsByDate">
+      <wsdl:input name="fetchLottoDrawsByDate" message="tns:fetchLottoDrawsByDate" />
+      <wsdl:output name="fetchLottoDrawsByDateResponse" message="tns:fetchLottoDrawsByDateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fetchExtra5LatestDraw">
+      <wsdl:input name="fetchExtra5LatestDraw" message="tns:fetchExtra5LatestDraw" />
+      <wsdl:output name="fetchExtra5LatestDrawResponse" message="tns:fetchExtra5LatestDrawResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DrawQueriesServiceImplServiceSoapBinding" type="tns:DrawQueriesServiceSEI">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="fetchLottoDrawByNumber">
+      <soap:operation soapAction="urn:FetchLottoDrawByNumber" style="document" />
+      <wsdl:input name="fetchLottoDrawByNumber">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchLottoDrawByNumberResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchPropoDrawsByDate">
+      <soap:operation soapAction="urn:FetchPropoDrawsByDate" style="document" />
+      <wsdl:input name="fetchPropoDrawsByDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchPropoDrawsByDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchProtoDrawByNumber">
+      <soap:operation soapAction="urn:FetchProtoDrawByNumber" style="document" />
+      <wsdl:input name="fetchProtoDrawByNumber">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchProtoDrawByNumberResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchPropoGoalDrawsByDate">
+      <soap:operation soapAction="urn:FetchPropoGoalDrawsByDate" style="document" />
+      <wsdl:input name="fetchPropoGoalDrawsByDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchPropoGoalDrawsByDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchBowlingDrawsByDate">
+      <soap:operation soapAction="urn:FetchBowlingDrawsByDate" style="document" />
+      <wsdl:input name="fetchBowlingDrawsByDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchBowlingDrawsByDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchPropoDrawByNumberAndDay">
+      <soap:operation soapAction="urn:FetchPropoDrawByNumberAndDay" style="document" />
+      <wsdl:input name="fetchPropoDrawByNumberAndDay">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchPropoDrawByNumberAndDayResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchBowlingDrawByNumber">
+      <soap:operation soapAction="urn:FetchBowlingDrawByNumber" style="document" />
+      <wsdl:input name="fetchBowlingDrawByNumber">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchBowlingDrawByNumberResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchJokerDrawByNumber">
+      <soap:operation soapAction="urn:FetchJokerDrawByNumber" style="document" />
+      <wsdl:input name="fetchJokerDrawByNumber">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchJokerDrawByNumberResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchProtoLatestDraw">
+      <soap:operation soapAction="urn:FetchProtoLatestDraw" style="document" />
+      <wsdl:input name="fetchProtoLatestDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchProtoLatestDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchPowerSpinDrawByNumber">
+      <soap:operation soapAction="urn:FetchPowerSpinDrawByNumber" style="document" />
+      <wsdl:input name="fetchPowerSpinDrawByNumber">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchPowerSpinDrawByNumberResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchKinoDrawsByDate">
+      <soap:operation soapAction="urn:FetchKinoDrawsByDate" style="document" />
+      <wsdl:input name="fetchKinoDrawsByDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchKinoDrawsByDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchLatestPropoSundayDraw">
+      <soap:operation soapAction="urn:FetchLatestPropoSundayDraw" style="document" />
+      <wsdl:input name="fetchLatestPropoSundayDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchLatestPropoSundayDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchLottoLatestDraw">
+      <soap:operation soapAction="urn:FetchLottoLatestDraw" style="document" />
+      <wsdl:input name="fetchLottoLatestDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchLottoLatestDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchJokerDrawsByDate">
+      <soap:operation soapAction="urn:FetchJokerDrawsByDate" style="document" />
+      <wsdl:input name="fetchJokerDrawsByDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchJokerDrawsByDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchKinoLatestDraw">
+      <soap:operation soapAction="urn:FetchKinoLatestDraw" style="document" />
+      <wsdl:input name="fetchKinoLatestDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchKinoLatestDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchSuper3DrawsByDate">
+      <soap:operation soapAction="urn:FetchSuper3DrawsByDate" style="document" />
+      <wsdl:input name="fetchSuper3DrawsByDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchSuper3DrawsByDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchPenaltiesDrawByNumber">
+      <soap:operation soapAction="urn:FetchPenaltiesDrawByNumber" style="document" />
+      <wsdl:input name="fetchPenaltiesDrawByNumber">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchPenaltiesDrawByNumberResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchProtoDrawsByDate">
+      <soap:operation soapAction="urn:FetchProtoDrawsByDate" style="document" />
+      <wsdl:input name="fetchProtoDrawsByDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchProtoDrawsByDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchPenaltiesLatestDraw">
+      <soap:operation soapAction="urn:FetchPenaltiesLatestDraw" style="document" />
+      <wsdl:input name="fetchPenaltiesLatestDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchPenaltiesLatestDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchExtra5DrawByNumber">
+      <soap:operation soapAction="urn:FetchExtra5DrawByNumber" style="document" />
+      <wsdl:input name="fetchExtra5DrawByNumber">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchExtra5DrawByNumberResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchPenaltiesDrawsByDate">
+      <soap:operation soapAction="urn:FetchPenaltiesDrawsByDate" style="document" />
+      <wsdl:input name="fetchPenaltiesDrawsByDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchPenaltiesDrawsByDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchJokerLatestDraw">
+      <soap:operation soapAction="urn:FetchJokerLatestDraw" style="document" />
+      <wsdl:input name="fetchJokerLatestDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchJokerLatestDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchLatestPropoSaturdayDraw">
+      <soap:operation soapAction="urn:FetchLatestPropoSaturdayDraw" style="document" />
+      <wsdl:input name="fetchLatestPropoSaturdayDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchLatestPropoSaturdayDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchExtra5DrawsByDate">
+      <soap:operation soapAction="urn:FetchExtra5DrawsByDate" style="document" />
+      <wsdl:input name="fetchExtra5DrawsByDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchExtra5DrawsByDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchSuper3DrawByNumber">
+      <soap:operation soapAction="urn:FetchSuper3DrawByNumber" style="document" />
+      <wsdl:input name="fetchSuper3DrawByNumber">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchSuper3DrawByNumberResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchPowerSpinDrawsByDate">
+      <soap:operation soapAction="urn:FetchPowerSpinDrawsByDate" style="document" />
+      <wsdl:input name="fetchPowerSpinDrawsByDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchPowerSpinDrawsByDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchBowlingLatestDraw">
+      <soap:operation soapAction="urn:FetchBowlingLatestDraw" style="document" />
+      <wsdl:input name="fetchBowlingLatestDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchBowlingLatestDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchPropoGoalLatestDraw">
+      <soap:operation soapAction="urn:FetchPropoGoalLatestDraw" style="document" />
+      <wsdl:input name="fetchPropoGoalLatestDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchPropoGoalLatestDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchKinoDrawByNumber">
+      <soap:operation soapAction="urn:FetchKinoDrawByNumber" style="document" />
+      <wsdl:input name="fetchKinoDrawByNumber">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchKinoDrawByNumberResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchPowerSpinLatestDraw">
+      <soap:operation soapAction="urn:FetchPowerSpinLatestDraw" style="document" />
+      <wsdl:input name="fetchPowerSpinLatestDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchPowerSpinLatestDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchPropoGoalDrawByNumber">
+      <soap:operation soapAction="urn:FetchPropoGoalDrawByNumber" style="document" />
+      <wsdl:input name="fetchPropoGoalDrawByNumber">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchPropoGoalDrawByNumberResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchSuper3LatestDraw">
+      <soap:operation soapAction="urn:FetchSuper3LatestDraw" style="document" />
+      <wsdl:input name="fetchSuper3LatestDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchSuper3LatestDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchLatestPropoWednesdayDraw">
+      <soap:operation soapAction="urn:FetchLatestPropoWednesdayDraw" style="document" />
+      <wsdl:input name="fetchLatestPropoWednesdayDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchLatestPropoWednesdayDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchExtra5LatestDraw">
+      <soap:operation soapAction="urn:FetchExtra5LatestDraw" style="document" />
+      <wsdl:input name="fetchExtra5LatestDraw">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchExtra5LatestDrawResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fetchLottoDrawsByDate">
+      <soap:operation soapAction="urn:FetchLottoDrawsByDate" style="document" />
+      <wsdl:input name="fetchLottoDrawsByDate">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fetchLottoDrawsByDateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DrawQueriesServiceImplService">
+    <wsdl:port name="DrawQueriesServiceImplPort" binding="tns:DrawQueriesServiceImplServiceSoapBinding">
+      <soap:address location="http://applications.opap.gr/DrawsQueryServices/services/DrawQueriesServiceImplPort" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
