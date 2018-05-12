@@ -22,8 +22,10 @@
 </head>
 <body style="background-color: #FFF2E6">
     <form id="form1" runat="server">
+        <a style="text-decoration:none" class="newStyle1" href="Default.aspx">Home Page</a></span>
         <p class="auto-style1">
-            Countries that use the specific currency.</p>
+            Countries that use the specific currency.&nbsp;&nbsp; </p>
+        
         <p>
             &nbsp;</p>
         <p>
@@ -35,10 +37,10 @@
         <p>
             <table class="auto-style2">
                 <tr>
-                    <td class="auto-style3"><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+                    <td class="auto-style3"><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>&nbsp; Currency Iso </td>
                    <td> 
                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-                    </td>
+                    &nbsp; Country Iso</td>
                 </tr>
                 <tr>
                     <td class="auto-style3"> <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Search" /></td>

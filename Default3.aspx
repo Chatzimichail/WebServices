@@ -13,12 +13,13 @@
 </head>
 <body style="background-color: #FFF2E6">
     <form id="form1" runat="server">
+        <a style="text-decoration:none" class="newStyle1" href="Default.aspx">Home Page</a></span>
     <div>
     
         <span class="auto-style1">E-mail validator</span><br />
         <br />
         <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-        <br />
+        &nbsp;Email<br />
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
         <br />
